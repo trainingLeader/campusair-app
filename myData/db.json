@@ -1,9 +1,20 @@
 {
-    "clientes" : [],
-    "contactos" : [],
-    "flota" : [],
-    "personal" : [],
-    "ventas" : [],
-    "detalleventas" : [],
-    "trayectos" : []
+  "clientes": [
+    {
+      "createdAt": "2023-05-03",
+      "cc": "94999",
+      "nombres": "sergio",
+      "apellidos": "gonzalez",
+      "email": "sa@gmail.com",
+      "telefono": "949",
+      "fechanac": "2023-05-04",
+      "id": 1
+    }
+  ],
+  "contactos": [],
+  "flota": [],
+  "personal": [],
+  "ventas": [],
+  "detalleventas": [],
+  "trayectos": []
 }

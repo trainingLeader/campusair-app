@@ -1,3 +1,4 @@
+import { opc } from "../../Apis/customer-api.js";
 export class CustomerForm extends HTMLElement{
     constructor(){
         super();
@@ -55,6 +56,15 @@ export class CustomerForm extends HTMLElement{
         </div>  
         
         `
+        this.saveData();
+    }
+    saveData = () =>{
+        let myForm = document.querySelector("#frmData");
+        myForm.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            let data = Object.fromEntries(new FormData(e.target));
+            opc[e.submitter.dataset.accion](data)    
+        })
     }
 }
 customElements.define("customer-form", CustomerForm);

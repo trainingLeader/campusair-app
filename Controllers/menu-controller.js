@@ -17,7 +17,9 @@ export class MenuController extends HTMLElement{
                                 //myInput.focus()
                             })
                         break;
-                    case "wc-listarcliente":
+                    case "wc-listarcliente": 
+                        const lstcliente=document.querySelector ('#wc-listarcliente');
+                        lstcliente.classList.toggle('d-none');
                         break;
                     case "buscar-cliente":
                         break;
