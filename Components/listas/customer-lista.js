@@ -66,7 +66,7 @@ export class CustomerLista extends HTMLElement {
             val.addEventListener("click",(e)=>{
                 const idCliente = e.target.dataset.idclidel;
                 console.log(idCliente);
-                console.log("convencional commit");
+                
             })
         })
 
